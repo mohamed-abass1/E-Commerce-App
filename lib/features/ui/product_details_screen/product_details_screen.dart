@@ -1,8 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerece_online_c13/domain/intities/ProductResponseEntity.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/cart_screen/cartTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -13,6 +10,7 @@ import '../../../core/utils/app_assets.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_styles.dart';
 import '../../../domain/intities/FavouriteResponseEntity.dart';
+import '../pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 
 
 class ProductDetailsScreen extends StatefulWidget {
@@ -75,7 +73,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                         width: 191.w,
                         height: 120.h,
                         fit: BoxFit.cover,
-                          imageUrl: 'https://ecommerce.routemisr.com/Route-Academy-products/${url}',
+                          imageUrl: '${url}',
                         placeholder: (context, url) => const Center(
                           child: CircularProgressIndicator(
                             color: AppColors.primaryDark,

@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/RemoveFavouriteResponseEntity.dart';
+
+import '../../domain/intities/RemoveFavouriteResponseEntity.dart';
 
 /// status : "success"
 /// message : "Product removed successfully to your wishlist"

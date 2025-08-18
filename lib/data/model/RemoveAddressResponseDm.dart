@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/RemoveAdressResponseEntity.dart';
+
+import '../../domain/intities/RemoveAdressResponseEntity.dart';
 
 class RemoveAddressResponseDm extends RemoveAddressResponseEntity {
   RemoveAddressResponseDm({

@@ -1,10 +1,4 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:e_commerece_online_c13/core/utils/dialog_utils.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/ForgetPassword/ForgetPasswordStates.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/ForgetPassword/ForgetPasswordViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/VerifyResetCode/VerifyResetCode_screen.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/login/logInViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/login/logInViewModelStates.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,9 +11,13 @@ import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_routes.dart';
 import '../../../../core/utils/app_styles.dart';
+import '../../../../core/utils/dialog_utils.dart';
 import '../../../../core/utils/validators.dart';
 import '../../widgets/custom_elevated_button.dart';
 import '../../widgets/custom_text_form_field.dart';
+import '../VerifyResetCode/VerifyResetCode_screen.dart';
+import 'ForgetPasswordStates.dart';
+import 'ForgetPasswordViewModel.dart';
 
 class ForgetPassword extends StatefulWidget {
   static String route='forgetPassword';

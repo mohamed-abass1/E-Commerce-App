@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/GetSpecificProduct.dart';
+
+import '../../domain/intities/GetSpecificProduct.dart';
 
 class GetSpecificProductResponseDm extends GetSpecificProductResponseEntity{
   GetSpecificProductResponseDm({

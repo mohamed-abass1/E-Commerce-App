@@ -1,9 +1,7 @@
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerece_online_c13/domain/intities/CartResponseEntity.dart';
-import 'package:e_commerece_online_c13/features/ui/GetProductFromCart/GetSpecificProduct.dart';
-import 'package:e_commerece_online_c13/features/ui/GetProductFromCart/GetSpecificProductViewModel.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -14,6 +12,9 @@ import '../../../DI/DI.dart';
 import '../../../core/utils/app_assets.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_styles.dart';
+import '../../../domain/intities/CartResponseEntity.dart';
+import 'GetSpecificProduct.dart';
+import 'GetSpecificProductViewModel.dart';
 
 class FromCartProductScreen extends StatefulWidget {
   FromCartProductScreen({super.key});
@@ -87,7 +88,7 @@ class _FromCartProductScreenState extends State<FromCartProductScreen> {
                             ),
                             errorWidget: (context, url, error) => const Icon(
                               Icons.error,
-                              color: AppColors.redColor,
+                              color: AppColors.primaryColor,
                             ),
                           ),
                         );

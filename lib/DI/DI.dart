@@ -1,4 +1,4 @@
-import 'package:e_commerece_online_c13/DI/DI.config.dart';
+import 'package:e_commerece_app/DI/DI.config.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 

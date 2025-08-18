@@ -1,15 +1,12 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/core/api/api_manger.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/data/model/ChangePasswordResponseDm.dart';
-import 'package:e_commerece_online_c13/data/model/logInResponseDTO.dart';
-import 'package:e_commerece_online_c13/domain/intities/logInResponseEntity.dart';
-import 'package:e_commerece_online_c13/domain/repositories/data_source/logInDataSource.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../core/api/api_manger.dart';
+import '../../core/failers/failers.dart';
 import '../../domain/intities/ChangePasswordResponseEntity.dart';
 import '../../domain/repositories/data_source/ChangePasswordDataSource.dart';
+import '../model/ChangePasswordResponseDm.dart';
 @Injectable(as:ChangePasswordDataSource )
 class ChangePasswordDataSourceImpl implements ChangePasswordDataSource{
   ApiManger apiManger;

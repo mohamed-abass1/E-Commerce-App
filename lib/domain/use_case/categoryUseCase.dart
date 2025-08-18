@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
-import 'package:e_commerece_online_c13/domain/repositories/repositories/categoryRepositories.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../core/failers/failers.dart';
+import '../intities/categoryResponse.dart';
+import '../repositories/repositories/categoryRepositories.dart';
 @injectable
 class CategoryUseCase{
   CategoryRepositories categoryRepositories;

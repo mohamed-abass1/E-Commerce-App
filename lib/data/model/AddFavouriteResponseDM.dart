@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/AddFavouriteResponse.dart';
+
+import '../../domain/intities/AddFavouriteResponse.dart';
 
 /// status : "success"
 /// message : "Product added successfully to your wishlist"

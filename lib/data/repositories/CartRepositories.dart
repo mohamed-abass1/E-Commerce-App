@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../core/failers/failers.dart';
 import '../../domain/intities/CartResponseEntity.dart';
 import '../../domain/repositories/data_source/CartDataSource.dart';
 import '../../domain/repositories/repositories/CartRepositories.dart';

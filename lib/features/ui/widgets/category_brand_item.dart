@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/utils/app_colors.dart';
+import '../../../domain/intities/categoryResponse.dart';
 
 class CategoryBrandItem extends StatelessWidget {
   CategoryEntity item;

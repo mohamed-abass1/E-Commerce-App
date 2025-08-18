@@ -1,6 +1,3 @@
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/user_tab/UserTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/user_tab/user_tab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -20,9 +17,11 @@ import 'features/ui/auth/register/register_screen.dart';
 import 'features/ui/pages/cart_screen/cartTabViewModel.dart';
 import 'features/ui/pages/cart_screen/cart_screen.dart';
 import 'features/ui/pages/home_screen/home_screen.dart';
+import 'features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
 import 'features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 import 'features/ui/GetProductFromCart/FromCartProductScreen.dart';
 import 'features/ui/pages/home_screen/tabs/user_tab/AddLocation/AddLocation/AddLocation_screen.dart';
+import 'features/ui/pages/home_screen/tabs/user_tab/UserTabViewModel.dart';
 import 'features/ui/pages/home_screen/tabs/user_tab/user_tab.dart';
 import 'features/ui/product_details_screen/product_details_screen.dart';
 

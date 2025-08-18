@@ -1,5 +1,6 @@
-import 'package:e_commerece_online_c13/data/model/ProductResponseDM.dart';
-import 'package:e_commerece_online_c13/domain/intities/CartResponseEntity.dart';
+import '../../domain/intities/CartResponseEntity.dart';
+import 'ProductResponseDM.dart';
+
 class GetCartResponseDm extends GetCartResponseEntity {
   GetCartResponseDm({
     super.status,

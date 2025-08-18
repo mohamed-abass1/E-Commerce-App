@@ -1,12 +1,13 @@
 import 'package:bloc/bloc.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/data/model/RegisterResponse.dart';
-import 'package:e_commerece_online_c13/domain/intities/RegisterResponse.dart';
-import 'package:e_commerece_online_c13/domain/use_case/RegisterUseCase.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/register/registerScreenStates/registerScreenStates.dart';
+import 'package:e_commerece_app/features/ui/auth/register/registerScreenStates/registerScreenStates.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
+
+import '../../../../core/failers/failers.dart';
+import '../../../../domain/intities/RegisterResponse.dart';
+import '../../../../domain/use_case/RegisterUseCase.dart';
 @injectable
 class RegisterScreenViewModel extends Cubit<RegisterScreenStates>{
   RegisterUseCase registerUseCase;

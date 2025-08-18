@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/logInResponseEntity.dart';
+
+import '../../../../domain/intities/logInResponseEntity.dart';
 
 abstract class LogInStates{}
 class  LogInInitialState extends LogInStates{}

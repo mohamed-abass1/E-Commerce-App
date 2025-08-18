@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/FavouriteResponseEntity.dart';
+
+import '../../domain/intities/FavouriteResponseEntity.dart';
 
 /// status : "success"
 /// count : 2

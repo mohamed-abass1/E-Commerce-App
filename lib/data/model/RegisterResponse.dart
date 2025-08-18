@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/RegisterResponse.dart';
+
+import '../../domain/intities/RegisterResponse.dart';
 
 /// message : "success"
 /// user : {"name":"Ahmed Abd Al-Muti","email":"mohamedabass@gmail.com","role":"user"}

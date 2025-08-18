@@ -1,11 +1,12 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
-import 'package:e_commerece_online_c13/domain/use_case/brandUseCase.dart';
-import 'package:e_commerece_online_c13/domain/use_case/categoryUseCase.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../../../../../core/failers/failers.dart';
+import '../../../../../../domain/intities/categoryResponse.dart';
+import '../../../../../../domain/use_case/brandUseCase.dart';
+import '../../../../../../domain/use_case/categoryUseCase.dart';
 import 'homeTabStates.dart';
 
 @injectable

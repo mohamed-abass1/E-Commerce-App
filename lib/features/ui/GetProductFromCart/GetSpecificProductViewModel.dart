@@ -1,8 +1,9 @@
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/domain/use_case/GetSpecificProductUseCase.dart';
-import 'package:e_commerece_online_c13/features/ui/GetProductFromCart/GetSpecificProduct.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
+
+import '../../../domain/use_case/GetSpecificProductUseCase.dart';
+import 'GetSpecificProduct.dart';
 @injectable
 class GetSpecificProductViewModel extends Cubit<GetSpecificProductState>{
   GetSpecificProductUseCase getSpecificProductUseCase;

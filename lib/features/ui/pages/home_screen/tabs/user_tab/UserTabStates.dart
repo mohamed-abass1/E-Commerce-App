@@ -1,6 +1,7 @@
-import 'package:e_commerece_online_c13/domain/intities/AddLocationResponseEntity.dart';
-import 'package:e_commerece_online_c13/domain/intities/RemoveAdressResponseEntity.dart';
-import 'package:e_commerece_online_c13/domain/intities/UpdateUserDataResponseEntity.dart';
+
+import '../../../../../../domain/intities/AddLocationResponseEntity.dart';
+import '../../../../../../domain/intities/RemoveAdressResponseEntity.dart';
+import '../../../../../../domain/intities/UpdateUserDataResponseEntity.dart';
 
 abstract class UserTabStates{}
 class UserTabInitialState extends UserTabStates{}

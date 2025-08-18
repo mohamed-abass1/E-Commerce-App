@@ -1,12 +1,10 @@
-import 'package:e_commerece_online_c13/domain/intities/AddToCartResponseEntity.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/cart_screen/cartTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/utils/app_assets.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_routes.dart';
+import '../pages/cart_screen/cartTabViewModel.dart';
 
 class CustomAppBarBadge extends StatefulWidget {
    CustomAppBarBadge();
