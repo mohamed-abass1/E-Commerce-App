@@ -23,11 +23,11 @@ class UserViewModel extends Cubit<UserTabStates> {
   List<AddLocationDataEntity>userLocations=[];
   AddLocationDataEntity? chosenUserLocation;
   TextEditingController fullNameController =
-  TextEditingController(text: "Mohamed Abass Ahmed");
+  TextEditingController(text: "Type Your New Name");
   TextEditingController emailController =
-  TextEditingController(text: "em.mohamedabass@gmail.com");
+  TextEditingController(text: "Type Your New E-mail..");
   TextEditingController mobileController =
-  TextEditingController(text: "01205408261");
+  TextEditingController(text: "Type Your New Phone");
 Location location=Location();
  late    GoogleMapController MapController;
 LatLng latLng=LatLng(38, -122.08832357078792);

@@ -148,7 +148,7 @@ Future<Response> changePassword(String oldPassword,String newPassword,String reP
   return dio.put('https://ecommerce.routemisr.com/api/v1/users/changeMyPassword',
       data: {
 
-          "currentPassword":newPassword,
+          "currentPassword":oldPassword,
           "password":newPassword,
           "rePassword":rePassword
       },

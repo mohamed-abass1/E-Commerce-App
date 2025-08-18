@@ -60,6 +60,9 @@ class _UserTabState extends State<UserTab> {
         } else if (state is UpdateUserInfoSuccessState) {
           DialogUtils.hideLoading(context);
           DialogUtils.showMessage(
+            posAction: (){SharedPreferenceUtils.removeData(key: 'token');
+              Navigator.pushNamed(context, AppRoutes.loginRoute);
+              },
               context: context,
               message: 'Updated Successfully',
               title: 'Success',
@@ -88,14 +91,9 @@ class _UserTabState extends State<UserTab> {
                     },
                   )
                 ],
-              ),
-              AutoSizeText(
-                viewModel.emailController.text,
-                style: AppStyles.medium14LightPrimary,
-              ),
-              ///update Info
+              ),///update Info
               SizedBox(
-                height: 40.h,
+                height: 20.h,
               ),
               AutoSizeText(
                 "Your full name",

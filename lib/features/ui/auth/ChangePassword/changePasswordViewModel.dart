@@ -10,7 +10,7 @@ import 'changePasswordViewModelStates.dart';
 class changePasswordViewModel extends Cubit<changePasswordStates>{
   ChangePasswordUseCase changePasswordUseCase;
   var formKey = GlobalKey<FormState>();
-  TextEditingController oldPasswordController = TextEditingController(text: '');
+  TextEditingController oldPasswordController = TextEditingController();
   TextEditingController newPasswordController = TextEditingController(text: '');
   TextEditingController rePasswordController = TextEditingController(text: '');
 
