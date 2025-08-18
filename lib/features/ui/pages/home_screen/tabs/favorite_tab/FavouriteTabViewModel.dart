@@ -1,4 +1,3 @@
-import 'package:e_commerece_online_c13/domain/intities/FavouriteResponseEntity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -6,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../domain/intities/FavouriteResponseEntity.dart';
 import '../../../../../../domain/use_case/AddFavouriteUseCase.dart';
 import '../../../../../../domain/use_case/FavouriteUseCase.dart';
 import '../../../../../../domain/use_case/RemoveFavouriteUseCase.dart';

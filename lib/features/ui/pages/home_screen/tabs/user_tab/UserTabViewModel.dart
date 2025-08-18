@@ -1,15 +1,15 @@
 
-import 'package:e_commerece_online_c13/domain/intities/AddLocationResponseEntity.dart';
-import 'package:e_commerece_online_c13/domain/repositories/data_source/LocationDataSource.dart';
-import 'package:e_commerece_online_c13/domain/use_case/LocationUseCase.dart';
-import 'package:e_commerece_online_c13/domain/use_case/RemoveAddressUseCase.dart';
-import 'package:e_commerece_online_c13/domain/use_case/UpdateUserDataUseCase.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:injectable/injectable.dart';
 import 'package:location/location.dart';
 
+import '../../../../../../domain/intities/AddLocationResponseEntity.dart';
+import '../../../../../../domain/use_case/LocationUseCase.dart';
+import '../../../../../../domain/use_case/RemoveAddressUseCase.dart';
+import '../../../../../../domain/use_case/UpdateUserDataUseCase.dart';
 import 'UserTabStates.dart';
 
 @injectable

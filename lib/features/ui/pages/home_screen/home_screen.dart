@@ -1,11 +1,9 @@
-import 'package:e_commerece_online_c13/features/ui/pages/cart_screen/cartTabStates.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/cart_screen/cartTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/favorite_tab/favorite_tab.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/home_tab/home_tab.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/products_tab/products_tab.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/user_tab/user_tab.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/favorite_tab/favorite_tab.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/home_tab/home_tab.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/products_tab/products_tab.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/user_tab/user_tab.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -14,6 +12,8 @@ import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../widgets/custom_badge.dart';
+import '../cart_screen/cartTabStates.dart';
+import '../cart_screen/cartTabViewModel.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

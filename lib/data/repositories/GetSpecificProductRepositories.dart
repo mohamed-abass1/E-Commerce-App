@@ -1,10 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
-import 'package:e_commerece_online_c13/domain/repositories/data_source/categoryDataSource.dart';
-import 'package:e_commerece_online_c13/domain/repositories/repositories/categoryRepositories.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../core/failers/failers.dart';
 import '../../domain/intities/GetSpecificProduct.dart';
 import '../../domain/repositories/data_source/GetSpecificProductDataSource.dart';
 import '../../domain/repositories/repositories/GetSpecificProductRepositories.dart';

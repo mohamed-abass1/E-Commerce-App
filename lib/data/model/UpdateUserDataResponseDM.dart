@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/UpdateUserDataResponseEntity.dart';
+
+import '../../domain/intities/UpdateUserDataResponseEntity.dart';
 
 class UpdateUserDataResponseDm extends UpdateUserDataResponseEntity{
   UpdateUserDataResponseDm({

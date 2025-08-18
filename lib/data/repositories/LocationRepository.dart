@@ -1,10 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/domain/intities/AddLocationResponseEntity.dart';
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
-import 'package:e_commerece_online_c13/domain/repositories/repositories/brandRepository.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../core/failers/failers.dart';
+import '../../domain/intities/AddLocationResponseEntity.dart';
 import '../../domain/repositories/data_source/LocationDataSource.dart';
 import '../../domain/repositories/data_source/brandDataSource.dart';
 import '../../domain/repositories/repositories/LocationRepository.dart';

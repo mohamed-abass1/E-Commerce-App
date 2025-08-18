@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/core/failers/failers.dart';
-import 'package:e_commerece_online_c13/domain/repositories/data_source/remoteDataSource.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../core/failers/failers.dart';
 import '../../domain/intities/RegisterResponse.dart';
+import '../../domain/repositories/data_source/remoteDataSource.dart';
 import '../../domain/repositories/repositories/Repositories.dart';
 @Injectable(as: AuthRepositories)
 class AuthRepositoryImpl implements AuthRepositories {

@@ -1,10 +1,11 @@
-import 'package:e_commerece_online_c13/DI/DI.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/register/registerScreenStates/registerScreenStates.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/register/view_model.dart';
+import 'package:e_commerece_app/features/ui/auth/register/registerScreenStates/registerScreenStates.dart';
+import 'package:e_commerece_app/features/ui/auth/register/view_model.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../DI/DI.dart';
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_routes.dart';

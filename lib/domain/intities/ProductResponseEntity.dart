@@ -1,6 +1,6 @@
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
 
 import 'FavouriteResponseEntity.dart';
+import 'categoryResponse.dart';
 
 /// results : 56
 /// metadata : {"currentPage":1,"numberOfPages":2,"limit":40,"nextPage":2}

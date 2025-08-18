@@ -1,7 +1,7 @@
-import 'package:e_commerece_online_c13/data/model/categoryRespnonseDM.dart';
-import 'package:e_commerece_online_c13/domain/intities/ProductResponseEntity.dart';
 
+import '../../domain/intities/ProductResponseEntity.dart';
 import 'FavouriteResponseDM.dart';
+import 'categoryRespnonseDM.dart';
 
 class ProductResponseDm extends ProductResponseEntity{
   ProductResponseDm({

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:e_commerece_online_c13/core/cach/SharedPrefrence.dart';
 import 'package:injectable/injectable.dart';
+
+import '../cach/SharedPrefrence.dart';
 @singleton
 class ApiManger {
 

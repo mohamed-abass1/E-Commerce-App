@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/ChangePasswordResponseEntity.dart';
+
+import '../../domain/intities/ChangePasswordResponseEntity.dart';
 
 class ChangePasswordResponseDm extends ChangePasswordResponseEntity {
   ChangePasswordResponseDm({

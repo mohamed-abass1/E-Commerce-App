@@ -1,11 +1,11 @@
-import 'package:e_commerece_online_c13/DI/DI.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../widgets/favorite_item.dart';
 import 'FavouriteTabStates.dart';
+import 'FavouriteTabViewModel.dart';
 
 class FavoriteTab extends StatefulWidget {
   @override

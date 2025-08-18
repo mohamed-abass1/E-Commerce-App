@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/AddLocationResponseEntity.dart';
+
+import '../../domain/intities/AddLocationResponseEntity.dart';
 
 class AddLocationResponseDm extends AddLocationResponseEntity {
   AddLocationResponseDm({

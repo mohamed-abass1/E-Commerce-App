@@ -1,4 +1,3 @@
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/home_tab/homeTabViewModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -11,6 +10,7 @@ import '../../../../../../core/utils/app_styles.dart';
 import '../../../../../../domain/intities/categoryResponse.dart';
 import '../../../../widgets/category_brand_item.dart';
 import 'homeTabStates.dart';
+import 'homeTabViewModel.dart';
 
 class HomeTab extends StatelessWidget {
 

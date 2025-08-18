@@ -1,9 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerece_online_c13/domain/intities/FavouriteResponseEntity.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabStates.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -11,6 +8,10 @@ import '../../../core/utils/app_assets.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_routes.dart';
 import '../../../core/utils/app_styles.dart';
+import '../../../domain/intities/FavouriteResponseEntity.dart';
+import '../pages/home_screen/tabs/favorite_tab/FavouriteTabStates.dart';
+import '../pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
+import '../pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 import 'custom_elevated_button.dart';
 
 class FavoriteItem extends StatefulWidget {

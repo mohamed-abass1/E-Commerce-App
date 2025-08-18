@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/SendResetPasswordResponseEntity.dart';
+
+import '../../domain/intities/SendResetPasswordResponseEntity.dart';
 
 class SendResetPasswordResponseDm extends SendResetPasswordResponseEntity {
   SendResetPasswordResponseDm({

@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/AddToCartResponseEntity.dart';
+
+import '../../domain/intities/AddToCartResponseEntity.dart';
 
 class AddToCartResponseDm extends AddToCartResponseEntity {
   AddToCartResponseDm({

@@ -1,13 +1,14 @@
-import 'package:e_commerece_online_c13/core/utils/app_colors.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/products_tab/ProductTabStates.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import '../../../../../../DI/DI.dart';
+import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_routes.dart';
 import '../../../../widgets/product_tab_item.dart';
+import 'ProductTabStates.dart';
 import 'ProductTabViewModel.dart';
 
 class ProductsTab extends StatelessWidget {

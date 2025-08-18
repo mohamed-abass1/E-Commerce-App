@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:e_commerece_online_c13/domain/intities/GetSpecificProduct.dart';
 
 import '../../../core/failers/failers.dart';
+import '../../intities/GetSpecificProduct.dart';
 
 
 abstract class GetSpecificProductRepository {

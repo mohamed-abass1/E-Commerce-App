@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/categoryResponse.dart';
+
+import '../../domain/intities/categoryResponse.dart';
 
 /// results : 10
 /// metadata : {"currentPage":1,"numberOfPages":1,"limit":40}

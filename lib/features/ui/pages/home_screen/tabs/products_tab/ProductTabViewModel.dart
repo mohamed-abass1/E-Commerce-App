@@ -1,12 +1,12 @@
-import 'package:e_commerece_online_c13/core/cach/SharedPrefrence.dart';
-import 'package:e_commerece_online_c13/domain/use_case/ProductUseCase.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/cart_screen/cartTabViewModel.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../../../domain/intities/FavouriteResponseEntity.dart';
 import '../../../../../../domain/intities/ProductResponseEntity.dart';
+import '../../../../../../domain/use_case/ProductUseCase.dart';
 import '../../../../../../domain/use_case/addToCartUseCase.dart';
+import '../../../cart_screen/cartTabViewModel.dart';
 import 'ProductTabStates.dart';
 
 @injectable

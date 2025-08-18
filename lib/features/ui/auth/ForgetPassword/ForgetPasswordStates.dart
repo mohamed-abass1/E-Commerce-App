@@ -1,5 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/SendResetPasswordResponseEntity.dart';
-import 'package:e_commerece_online_c13/domain/intities/logInResponseEntity.dart';
+
+import '../../../../domain/intities/SendResetPasswordResponseEntity.dart';
 
 abstract class ForgetPasswordState{}
 class  ForgetPasswordInitialState extends ForgetPasswordState{}

@@ -1,23 +1,23 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:e_commerece_online_c13/DI/DI.dart';
-import 'package:e_commerece_online_c13/core/cach/SharedPrefrence.dart';
-import 'package:e_commerece_online_c13/core/utils/app_routes.dart';
-import 'package:e_commerece_online_c13/core/utils/app_theme.dart';
-import 'package:e_commerece_online_c13/features/ui/auth/ChangePassword/ChangePassword_screen.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/user_tab/AddLocation/AddLocation/AddLocation_screen.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/user_tab/UserTabStates.dart';
-import 'package:e_commerece_online_c13/features/ui/pages/home_screen/tabs/user_tab/UserTabViewModel.dart';
-import 'package:e_commerece_online_c13/features/ui/widgets/custom_elevated_button.dart';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import '../../../../../../DI/DI.dart';
+import '../../../../../../core/cach/SharedPrefrence.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_routes.dart';
 import '../../../../../../core/utils/app_styles.dart';
 import '../../../../../../core/utils/dialog_utils.dart';
+import '../../../../auth/ChangePassword/ChangePassword_screen.dart';
+import '../../../../widgets/custom_elevated_button.dart';
 import '../../../../widgets/custom_text_form_field.dart';
+import 'AddLocation/AddLocation/AddLocation_screen.dart';
+import 'UserTabStates.dart';
+import 'UserTabViewModel.dart';
 
 class UserTab extends StatefulWidget {
   const UserTab({super.key});

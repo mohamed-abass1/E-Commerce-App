@@ -1,4 +1,5 @@
-import 'package:e_commerece_online_c13/domain/intities/logInResponseEntity.dart';
+import '../../domain/intities/logInResponseEntity.dart';
+
 class LogInResponseDto extends LogInResponseEntity  {
   LogInResponseDto({
       super.message,
