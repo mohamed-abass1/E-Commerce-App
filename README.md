@@ -40,25 +40,15 @@ The app allows users to explore products, manage favorites, view location on map
   - `connectivity_plus`  
   - `flutter_native_splash`  
 
----
-
+--
 ## Screenshots
 
-### Home
-![Home](assets/screenshots/E-commerce20%Home%20Tab.png)
+### Main Tabs
+| Home Tab | Product Tab | Cart Tab | Favourite Tab | Profile Tab |
+|----------|------------|---------|---------------|-------------|
+| ![Home Tab](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Product Tab](assets/ScreenShots/Product%20Tab.png) | ![Cart Tab](assets/ScreenShots/E-Commerce%20Cart%20Tab.png) | ![Favourite Tab](assets/ScreenShots/Favourite%20Tab.png) | ![Profile Tab](assets/ScreenShots/Profile%20Tab.png) |
 
-### Cart
-![Cart](assets/ScreenShots/E-Commerce%20Cart%20Tab.png)
-
-### Favorites
-![Favorites](assets/screenshots/Favorite%20Tab.png)
-
-### Profile
-![Profile](assets/screenshots/Profile%20Tab.png)
-
-### Google Map
-![Map](assets/screenshots/Map%20Screen.png)
-
-### Authentication
-![Login](assets/screenshots/Login%20Screen.png)  
-![Reset Password](assets/screenshots/Reset%20Password%2screen.png)
+### Other Screens
+| More Profile Tab | Register Screen | Login Screen | Forget Password Screen | Google Map Tab |
+|-----------------|----------------|--------------|-----------------------|----------------|
+| ![More Profile Tab](assets/ScreenShots/More%20Profile%20Tab.png) | ![Register Screen](assets/ScreenShots/Register%20Screen.png) | ![Login Screen](assets/ScreenShots/LogIn%20Screen.png) | ![Forget Password Screen](assets/ScreenShots/Forget%20Password%20Screen.png) | ![Google Map Tab](assets/ScreenShots/Google%20Map%20Tab.png) |
