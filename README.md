@@ -57,15 +57,8 @@ The app allows users to explore products, manage favorites, view location on map
 ![Profile](assets/screenshots/Profile%20Tab.png)
 
 ### Google Map
-![Map](assets/screenshots/Map%20Tab.png)
+![Map](assets/screenshots/Map%20Screen.png)
 
 ### Authentication
-![Login](assets/screenshots/Login%20Tab.png)  
-![Reset Password](assets/screenshots/Reset%20Password%20Tab.png)
-
----
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/ecommerce_app.git
+![Login](assets/screenshots/Login%20Screen.png)  
+![Reset Password](assets/screenshots/Reset%20Password%2screen.png)
