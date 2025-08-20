@@ -1,54 +1,56 @@
 # E-Commerce App
 
-A full-featured Flutter application for online shopping, designed with a clean architecture and modern UI components.  
-The app allows users to explore products, manage favorites, view location on maps, and handle authentication with secure flows.  
+A Flutter application that provides users with a seamless e-commerce shopping experience.  
+The app allows users to browse products, view details, add to cart, save favorites, and manage their profile.
 
 ---
 
 ## Features
-- **Home Tab** – Browse latest and trending products  
-- **Product Tab** – View product details with images, price, and description  
-- **Favorite Tab** – Save and manage favorite items  
-- **Profile Tab** – Manage user information and settings  
-- **Google Map Tab** – View store locations on interactive maps  
-- **Authentication Flow**:  
-  - Login  
-  - Forget Password  
-  - Reset Password  
+- Browse products with detailed information
+- Search and filter products
+- Add products to cart
+- Wishlist to save favorite products
+- User profile management: edit profile, avatar selection
+- Register, LogIn, and Password reset functionality
+- Google Maps integration for delivery location
+- Offline/online connectivity detection
+- Persistent local storage for cart, wishlist, and user preferences
 
 ---
 
-## Tech Stack
-- Flutter & Dart → Cross-platform mobile app development  
-- State Management → `flutter_bloc` with `get_it` & `injectable`  
-- Networking → `dio` for API integration  
-- Local Storage → `shared_preferences` for caching data  
-- Maps & Location → `google_maps_flutter` and `location`  
-- UI Enhancements:  
-  - `google_fonts`  
-  - `flutter_screenutil`  
-  - `auto_size_text`  
-  - `fluttertoast`  
-  - `smooth_page_indicator`  
-  - `carousel_slider` / `carousel_slider_plus`  
-  - `flutter_image_slideshow`  
-  - `colornames`  
-  - `readmore`  
-  - `cached_network_image`  
-- Other Utilities:  
-  - `dartz`  
-  - `connectivity_plus`  
-  - `flutter_native_splash`  
+## Technologies & Packages
+- **State Management**: Bloc, Flutter Bloc, Provider  
+- **Dependency Injection**: Injectable, GetIt  
+- **Networking**: Dio, HTTP  
+- **Functional Programming**: Dartz  
+- **Local Storage**: Hive, Hive Flutter, Shared Preferences, Path Provider  
+- **UI & Styling**: Google Fonts, Carousel Slider, Cached Network Image  
+- **Connectivity**: Connectivity Plus  
+- **Onboarding**: Introduction Screen  
 
---
+---
+
 ## Screenshots
 
 ### Main Tabs
 | Home Tab | Product Tab | Cart Tab | Favourite Tab | Profile Tab |
 |----------|------------|---------|---------------|-------------|
-| ![Home Tab](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Product Tab](assets/ScreenShots/E-Commerce%20Product%20Tab.png) | ![Cart Tab](assets/ScreenShots/E-Commerce%20Cart%20Tab.png) | ![Favourite Tab](assets/ScreenShots/E-Commerce%20Favourite%20Tab.png) | ![Profile Tab](assets/ScreenShots/E-Commerce%20Profile%20Tab.png) |
+| <img src="assets/ScreenShots/E-Commerce%20Home%20Tab.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20Product%20Tab.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20Cart%20Tab.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20Favourite%20Tab.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20Profile%20Tab.png" width="250"/> |
 
 ### Other Screens
-| More Profile Tab | Register Screen | Login Screen | Forget Password Screen | Google Map Tab |
-|-----------------|----------------|--------------|-----------------------|----------------|
-| ![More Profile Tab](assets/ScreenShots/E-Commerce%20More%20Profile%20Tab.png) | ![Register Screen](assets/ScreenShots/E-Commerce%20Register%20Screen.png) | ![Login Screen](assets/ScreenShots/E-Commerce%20Login%20Screen.png) | ![Forget Password Screen](assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png) | ![Google Map Tab](assets/ScreenShots/E-Commerce%20Google%20Map%20Tab.png) |
+| Register Screen | LogIn Screen | Forget Password Screen | Google Map Tab |
+|----------------|--------------|-----------------------|----------------|
+| <img src="assets/ScreenShots/E-Commerce%20Register%20Screen.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20LogIn%20Screen.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png" width="250"/> | <img src="assets/ScreenShots/E-Commerce%20Google%20Map%20Tab.png" width="250"/> |
+
+### More Profile
+| More Profile Tab |
+|-----------------|
+| <img src="assets/ScreenShots/E-Commerce%20More%20Profile%20Tab.png" width="250"/> |
+
+---
+
+## Installation & Usage
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/ecommerce_app.git
