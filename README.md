@@ -48,7 +48,7 @@ The app allows users to explore products, manage favorites, view location on map
 ![Home](assets/screenshots/E-commerce20%Home%20Tab.png)
 
 ### Cart
-![Product](assets/ScreenShots/E-Commerce20%Cart%20Tab.png)
+![Cart](assets/ScreenShots/E-Commerce%20Cart%20Tab.png)
 
 ### Favorites
 ![Favorites](assets/screenshots/Favorite%20Tab.png)
