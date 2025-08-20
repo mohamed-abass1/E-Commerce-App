@@ -44,4 +44,4 @@ The app allows users to browse products, view details, add to cart, save favorit
 ### Google Map
 | Google Map Tab |
 |----------------|
-| <img src="assets/ScreenShots/E-Commerce%20Google%20Map%20Maps.png" width="250" height="500"/> |
+| <img src="assets/ScreenShots/E-Commerce%20Google%20Maps.png" width="250" height="500"/> |
