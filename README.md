@@ -46,9 +46,9 @@ The app allows users to explore products, manage favorites, view location on map
 ### Main Tabs
 | Home Tab | Product Tab | Cart Tab | Favourite Tab | Profile Tab |
 |----------|------------|---------|---------------|-------------|
-| ![Home Tab](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Product Tab](assets/ScreenShots/Product%20Tab.png) | ![Cart Tab](assets/ScreenShots/E-Commerce%20Cart%20Tab.png) | ![Favourite Tab](assets/ScreenShots/Favourite%20Tab.png) | ![Profile Tab](assets/ScreenShots/Profile%20Tab.png) |
+| ![Home Tab](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Product Tab](assets/ScreenShots/E-Commerce%20Product%20Tab.png) | ![Cart Tab](assets/ScreenShots/E-Commerce%20Cart%20Tab.png) | ![Favourite Tab](assets/ScreenShots/E-Commerce%20Favourite%20Tab.png) | ![Profile Tab](assets/ScreenShots/E-Commerce%20Profile%20Tab.png) |
 
 ### Other Screens
 | More Profile Tab | Register Screen | Login Screen | Forget Password Screen | Google Map Tab |
 |-----------------|----------------|--------------|-----------------------|----------------|
-| ![More Profile Tab](assets/ScreenShots/More%20Profile%20Tab.png) | ![Register Screen](assets/ScreenShots/Register%20Screen.png) | ![Login Screen](assets/ScreenShots/LogIn%20Screen.png) | ![Forget Password Screen](assets/ScreenShots/Forget%20Password%20Screen.png) | ![Google Map Tab](assets/ScreenShots/Google%20Map%20Tab.png) |
+| ![More Profile Tab](assets/ScreenShots/E-Commerce%20More%20Profile%20Tab.png) | ![Register Screen](assets/ScreenShots/E-Commerce%20Register%20Screen.png) | ![Login Screen](assets/ScreenShots/E-Commerce%20Login%20Screen.png) | ![Forget Password Screen](assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png) | ![Google Map Tab](assets/ScreenShots/E-Commerce%20Google%20Map%20Tab.png) |
