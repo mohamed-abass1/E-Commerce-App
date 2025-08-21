@@ -29,6 +29,7 @@ The app allows users to browse products, view details, add to cart, save favorit
 - **Onboarding**: Introduction Screen  
 
 ---
+
 ## Screenshots
 
 ### Main Tabs
@@ -38,4 +39,4 @@ The app allows users to browse products, view details, add to cart, save favorit
 ### Other Screens
 | Login                                                             | Register                                                                      | Forget Password                                                                    | Google Map                                                  |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| ![Login](assets/ScreenShots/assets/ScreenShots/E-Commerce%20LogIn%20Screen.png) | ![Register](assets/ScreenShots/E-Commerce%20Register%20Screen.png) | ![Forget Password](assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png) | ![Google Map](assets/ScreenShots/E-Commerce%20Google%20Maps%20Tab.png) | 
+| ![Login](assets/ScreenShots/E-Commerce%20LogIn%20Screen.png) | ![Register](assets/ScreenShots/E-Commerce%20Register%20Screen.png) | ![Forget Password](assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png) | ![Google Map](assets/ScreenShots/E-Commerce%20Google%20Maps%20Tab.png) | 
