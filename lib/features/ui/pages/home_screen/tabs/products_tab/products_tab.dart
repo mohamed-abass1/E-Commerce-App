@@ -35,7 +35,8 @@ class ProductsTab extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-            Expanded(
+
+                      Expanded(
                 child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -46,7 +47,7 @@ class ProductsTab extends StatelessWidget {
               itemBuilder: (context, index) {
                 return InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, AppRoutes.productRoute,arguments: viewModel.productsList[index]);
+                    Navigator.pushNamed(context, AppRoutes.productDetailsRoute,arguments: viewModel.productsList[index]);
                   },
                   child:  ProductTabItem(productList: viewModel.productsList,index: index,),
                 );

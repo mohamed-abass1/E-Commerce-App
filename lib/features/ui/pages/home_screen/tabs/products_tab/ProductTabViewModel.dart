@@ -1,9 +1,7 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-
 import '../../../../../../domain/intities/FavouriteResponseEntity.dart';
-import '../../../../../../domain/intities/ProductResponseEntity.dart';
 import '../../../../../../domain/use_case/ProductUseCase.dart';
 import '../../../../../../domain/use_case/addToCartUseCase.dart';
 import '../../../cart_screen/cartTabViewModel.dart';
@@ -31,15 +29,15 @@ class ProductViewModel extends Cubit<ProductTabStates> {
     });
   }
 
-  void addToCart(String productId,context) async {
-    CartViewModel.get(context).numOfCart;
+  void addToCart(String productId, CartViewModel cartViewModel) async {
     emit(AddToCartLoadingState());
+
     var either = await addCartUseCase.invoke(productId);
+
     either.fold((error) {
       emit(AddToCartErrorState(errorMsg: error.ErrorMsg));
     }, (response) {
-      CartViewModel.get(context).changeCountNumber(response.numOfCartItems);
-      print(CartViewModel.get(context).numOfCart);
+      cartViewModel.changeCountNumber(response.numOfCartItems);
       emit(AddToCartSuccessState(responseEntity: response));
     });
   }

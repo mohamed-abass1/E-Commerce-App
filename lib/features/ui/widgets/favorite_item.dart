@@ -9,6 +9,7 @@ import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_routes.dart';
 import '../../../core/utils/app_styles.dart';
 import '../../../domain/intities/FavouriteResponseEntity.dart';
+import '../pages/cart_screen/cartTabViewModel.dart';
 import '../pages/home_screen/tabs/favorite_tab/FavouriteTabStates.dart';
 import '../pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
 import '../pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
@@ -37,7 +38,7 @@ class _FavoriteItemState extends State<FavoriteItem> {
                   padding: EdgeInsets.only(top: 10.h),
                   child: InkWell(
           onTap: () {
-            Navigator.pushNamed(context, AppRoutes.productRoute,arguments: widget.product);
+            Navigator.pushNamed(context, AppRoutes.productDetailsRoute,arguments: widget.product);
           },
           child: Container(
             height: 135.h,
@@ -165,7 +166,11 @@ class _FavoriteItemState extends State<FavoriteItem> {
                               child: CustomElevatedButton(
                                   text: "Add To Cart",
                                   onPressed: () {
-                                    ProductViewModel.get(context).addToCart(widget.product.id!, context);
+                                      final productVM = ProductViewModel.get(context);
+                                      final cartVM = CartViewModel.get(context);
+                                      productVM.addToCart(widget.product.id!, cartVM);
+
+
                                   },
                                   backgroundColor: AppColors.primaryColor,
                                   textStyle: AppStyles.medium14Category

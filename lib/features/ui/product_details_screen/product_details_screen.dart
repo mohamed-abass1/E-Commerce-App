@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:e_commerece_app/features/ui/pages/cart_screen/cartTabViewModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -201,7 +202,11 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                           padding: EdgeInsets.symmetric(
                               horizontal: 14.w, vertical: 14.h),
                         ),
-                        onPressed: () {ProductViewModel.get(context).addToCart(args.id!, context);},
+                          onPressed: () {
+                            final productVM = ProductViewModel.get(context);
+                            final cartVM = CartViewModel.get(context);
+                            productVM.addToCart(args.id!, cartVM);
+                          },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

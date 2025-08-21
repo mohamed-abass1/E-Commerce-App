@@ -1,3 +1,5 @@
+import 'package:e_commerece_app/features/ui/pages/home_screen/Home_Screen_ViewModel.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/products_tab/products_tab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -16,6 +18,7 @@ import 'features/ui/auth/login/login_screen.dart';
 import 'features/ui/auth/register/register_screen.dart';
 import 'features/ui/pages/cart_screen/cartTabViewModel.dart';
 import 'features/ui/pages/cart_screen/cart_screen.dart';
+import 'features/ui/pages/home_screen/Search Screen/SearchScreen.dart';
 import 'features/ui/pages/home_screen/home_screen.dart';
 import 'features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
 import 'features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
@@ -39,6 +42,7 @@ void main() async {
   }
   runApp(MultiBlocProvider(
       providers: [
+        BlocProvider(create: (context) => HomeScreenViewModel()),
         BlocProvider(create: (context) => getIt<UserViewModel>()),
         BlocProvider(create: (context) => getIt<FavouriteViewModel>()),
         BlocProvider(create: (context) => getIt<ProductViewModel>()),
@@ -65,7 +69,6 @@ class MyApp extends StatelessWidget {
           initialRoute: routeName,
           routes:{
             AddLocation.route: (context) => AddLocation(),
-
             ChangePassword.route: (context) => ChangePassword(),
             GoogleMapScreen.route: (context) => GoogleMapScreen(),
         ResetForgetPassword.route: (context) => ResetForgetPassword(),
@@ -75,7 +78,15 @@ class MyApp extends StatelessWidget {
             AppRoutes.registerRoute: (context) => RegisterScreen(),
             AppRoutes.homeRoute: (context) => const HomeScreen(),
             AppRoutes.cartRoute: (context) => CartScreen(),
-            AppRoutes.productRoute: (context) => ProductDetailsScreen(),
+            AppRoutes.productDetailsRoute: (context) => ProductDetailsScreen(),
+            AppRoutes.productRoute: (context) => ProductsTab(),
+            SearchScreen.route: (context) => BlocProvider.value(
+                value: HomeScreenViewModel.get(context),
+                child: SearchScreen(),
+              ),
+
+
+
             FromCartProductScreen.route: (context) => FromCartProductScreen(),
 
           },

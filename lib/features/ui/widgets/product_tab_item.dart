@@ -1,4 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:e_commerece_app/features/ui/pages/cart_screen/cartTabViewModel.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/products_tab/ProductTabStates.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -13,7 +15,7 @@ import '../pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 import 'custom_txt.dart';
 
 class ProductTabItem extends StatelessWidget {
-  ProductTabItem({required this.productList, required this.index});
+  ProductTabItem({super.key, required this.productList, required this.index});
 
   int index;
   List<FavouriteDataEntity> productList;
@@ -131,17 +133,29 @@ class ProductTabItem extends StatelessWidget {
     const Spacer(
     flex: 1,
     ),
-    InkWell(
-    onTap: () {
-    ProductViewModel.get(context).addToCart(productList[index].id!,context);
-    //   todo add to cart
-    },
-    splashColor: Colors.transparent,
-    child: Icon(
-    Icons.add_circle,
-    size: 32.sp,
-    color: AppColors.primaryColor,
-    ),
+    BlocListener(
+      bloc: ProductViewModel.get(context),
+      listener: (BuildContext context, state) {
+        if (state is AddToCartSuccessState) {
+          Fluttertoast.showToast(
+            msg: 'added To Cart',
+            backgroundColor: AppColors.greenColor,
+          );
+        }
+
+      },
+      child: InkWell(
+      onTap: () {
+      ProductViewModel.get(context).addToCart(productList[index].id!,CartViewModel.get(context));
+
+      },
+      splashColor: Colors.transparent,
+      child: Icon(
+      Icons.add_circle,
+      size: 32.sp,
+      color: AppColors.primaryColor,
+      ),
+      ),
     )
     ],
     )

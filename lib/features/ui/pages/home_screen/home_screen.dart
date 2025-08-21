@@ -1,19 +1,22 @@
+import 'package:e_commerece_app/core/utils/app_routes.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/Home_Screen_ViewModel.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/Search%20Screen/SearchScreen.dart';
 import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/favorite_tab/FavouriteTabViewModel.dart';
 import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/favorite_tab/favorite_tab.dart';
 import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/home_tab/home_tab.dart';
+import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/products_tab/ProductTabViewModel.dart';
 import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/products_tab/products_tab.dart';
 import 'package:e_commerece_app/features/ui/pages/home_screen/tabs/user_tab/user_tab.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../widgets/custom_badge.dart';
 import '../cart_screen/cartTabStates.dart';
 import '../cart_screen/cartTabViewModel.dart';
+import 'HomeScreenStates.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -28,7 +31,8 @@ class _HomeScreenState extends State<HomeScreen> {
      HomeTab(),
     ProductsTab(),
     FavoriteTab(),
-     UserTab()
+     UserTab(),
+    SearchScreen()
   ];
 
   void bottomNavOnTap(int index) {
@@ -39,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
 CartViewModel.get(context).getItemsInCart();
 FavouriteViewModel.get(context).getAllFavourites();
+ProductViewModel.get(context).getAllProducts();
     super.initState();
   }
   @override
@@ -119,57 +124,70 @@ FavouriteViewModel.get(context).getAllFavourites();
   }
 
   PreferredSizeWidget _buildAppBar(int index) {
+    final viewModel = HomeScreenViewModel.get(context);
+
     return AppBar(
       surfaceTintColor: AppColors.transparentColor,
       elevation: 0,
       toolbarHeight: index != 3 ? 120.h : kToolbarHeight,
       leadingWidth: double.infinity,
-      leading: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(bottom: 10.h),
-              child: Image.asset(
-                AppAssets.routeLogo,
-                width: 66.w,
-                height: 22.h,
+      leading: BlocBuilder<HomeScreenViewModel, HomeScreenStates>(
+        bloc: viewModel,
+        builder: (context, state) => Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(bottom: 10.h),
+                child: Image.asset(
+                  AppAssets.routeLogo,
+                  width: 66.w,
+                  height: 22.h,
+                ),
               ),
-            ),
-            Visibility(
-              visible: index != 3,
-              child: Expanded(
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
+              Visibility(
+                visible: index != 3,
+                child: Expanded(
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          onChanged: (value) {
+                            viewModel.searching(value, context);
+                          },
+                          controller: viewModel.searchText,
                           style: AppStyles.regular14Text,
                           cursorColor: AppColors.primaryColor,
                           onTap: () {
-                            //todo: implement search logic
+                            Navigator.pushNamed(context, SearchScreen.route);
+                            viewModel.searching(viewModel.searchText.text, context);
                           },
                           decoration: InputDecoration(
-                              border: _buildCustomBorder(),
-                              enabledBorder: _buildCustomBorder(),
-                              focusedBorder: _buildCustomBorder(),
-                              contentPadding: EdgeInsets.all(16.h),
-                              hintStyle: AppStyles.light14SearchHint,
-                              hintText: "what do you search for?",
-                              prefixIcon: Icon(
-                                Icons.search,
-                                size: 30.sp,
-                                color: AppColors.primaryColor.withOpacity(0.75),
-                              ))),
-                    ),
-                     BlocBuilder<CartViewModel,CartStates>(
-                         bloc: CartViewModel.get(context),
-                         builder:(context, state) => CustomAppBarBadge())
-                  ],
+                            border: _buildCustomBorder(),
+                            enabledBorder: _buildCustomBorder(),
+                            focusedBorder: _buildCustomBorder(),
+                            contentPadding: EdgeInsets.all(16.h),
+                            hintStyle: AppStyles.light14SearchHint,
+                            hintText: "what do you search for?",
+                            prefixIcon: Icon(
+                              Icons.search,
+                              size: 30.sp,
+                              color: AppColors.primaryColor.withOpacity(0.75),
+                            ),
+                          ),
+                        ),
+                      ),
+                      BlocBuilder<CartViewModel, CartStates>(
+                        bloc: CartViewModel.get(context),
+                        builder: (context, state) => CustomAppBarBadge(),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
