@@ -29,30 +29,13 @@ The app allows users to browse products, view details, add to cart, save favorit
 - **Onboarding**: Introduction Screen  
 
 ---
-# Screenshots
-
-### Main Tabs
-| Home Tab | Product Tab | Cart Tab | Favourite Tab | Profile Tab | More Profile Tab |
-|----------|------------|---------|---------------|-------------|-----------------|
-| <img src="assets/ScreenShots/E-Commerce%20Home%20Tab.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20Product%20Tab.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20Cart%20Tab.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20Favourite%20Tab.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20Profile%20Tab.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20More%20Profile%20Tab.png" style="max-width:100%; height:auto;" /> |
-
-### Other Screens
-| Register Screen | LogIn Screen | Forget Password Screen |
-|----------------|--------------|-----------------------|
-| <img src="assets/ScreenShots/E-Commerce%20Register%20Screen.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20LogIn%20Screen.png" style="max-width:100%; height:auto;" /> | <img src="assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png" style="max-width:100%; height:auto;" /> |
-
-### Google Map
-| Google Map Tab |
-|----------------|
-| <img src="assets/ScreenShots/E-Commerce%20Google%20Maps%20Tab.png" style="max-width:100%; height:auto;" /> |
-
 ## Screenshots
 
 ### Main Tabs
-| Home | Cart                                                          | Explore | Profile |
-|------|---------------------------------------------------------------|---------|---------|
-| ![Home](assets/ScreenShots/Movies%20App%20Home%20Tab.png) | ![Search](assets/ScreenShots/Movies%20App%20Search%20Tab.png) | ![Explore](assets/ScreenShots/Movies%20App%20Explore%20Tab.png) | ![Profile](assets/ScreenShots/Movies%20App%20Profile%20Tab.png) |
+| Home | Prodouct                                                     | Favourite                                                       | Profile |
+|------|--------------------------------------------------------------|-----------------------------------------------------------------|---------|
+| ![Home](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Prodouct](assets/ScreenShots/E-Commerce%20Product%20Tab.png) | ![Favourite](assets/ScreenShots/E-Commerce%20Favourite%20Tab.png) | ![Profile](assets/ScreenShots/E-Commerce%20Profile%20Tab.png) |
 ### Other Screens
-| Movie Details | More Movie Details | Edit Profile | Register |
-|---------------|--------------------|--------------|----------|
-| ![Details](assets/ScreenShots/Movies%20App%20Movie%20Details.png) | ![More Details](assets/ScreenShots/Movies%20App%20More%20Movie%20Details.png) | ![Edit Profile](assets/ScreenShots/Movies%20App%20Edit%20Profile%20Tab.png) | ![Register](assets/ScreenShots/Movies%20App%20Register.png) | 
+| Login                                                             | Register                                                                      | Forget Password                                                                    | Google Map                                                  |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| ![Login](assets/ScreenShots/assets/ScreenShots/E-Commerce%20LogIn%20Screen.png) | ![Register](assets/ScreenShots/E-Commerce%20Register%20Screen.png) | ![Forget Password](assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png) | ![Google Map](assets/ScreenShots/E-Commerce%20Google%20Maps%20Tab.png) | 
