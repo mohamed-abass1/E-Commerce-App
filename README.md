@@ -30,13 +30,23 @@ The app allows users to browse products, view details, add to cart, save favorit
 
 ---
 
+## Architecture
+The project follows **Clean Architecture with MVVM pattern**, ensuring scalability, testability, and maintainability:
+
+- **Presentation Layer** → Flutter UI with Bloc/Provider  
+- **Domain Layer** → Entities and Use Cases (business logic)  
+- **Data Layer** → Repository pattern with Remote (Dio/HTTP) and Local (Hive/SharedPreferences) sources  
+
+---
+
 ## Screenshots
 
 ### Main Tabs
-| Home | Prodouct                                                     | Favourite                                                       | Profile |
-|------|--------------------------------------------------------------|-----------------------------------------------------------------|---------|
-| ![Home](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Prodouct](assets/ScreenShots/E-Commerce%20Product%20Tab.png) | ![Favourite](assets/ScreenShots/E-Commerce%20Favourite%20Tab.png) | ![Profile](assets/ScreenShots/E-Commerce%20Profile%20Tab.png) |
+| Home | Product | Favourite | Profile |
+|------|---------|-----------|---------|
+| ![Home](assets/ScreenShots/E-Commerce%20Home%20Tab.png) | ![Product](assets/ScreenShots/E-Commerce%20Product%20Tab.png) | ![Favourite](assets/ScreenShots/E-Commerce%20Favourite%20Tab.png) | ![Profile](assets/ScreenShots/E-Commerce%20Profile%20Tab.png) |
+
 ### Other Screens
-| Login                                                             | Register                                                                      | Forget Password                                                                    | Google Map                                                  |
-|-------------------------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| Login | Register | Forget Password | Google Map |
+|-------|----------|-----------------|------------|
 | ![Login](assets/ScreenShots/E-Commerce%20LogIn%20Screen.png) | ![Register](assets/ScreenShots/E-Commerce%20Register%20Screen.png) | ![Forget Password](assets/ScreenShots/E-Commerce%20Forget%20Password%20Screen.png) | ![Google Map](assets/ScreenShots/E-Commerce%20Google%20Maps%20Tab.png) | 
